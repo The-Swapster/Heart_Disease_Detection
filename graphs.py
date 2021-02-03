@@ -1,7 +1,7 @@
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv(r'C:\Users\HP\Documents\research_paper\output.csv')
+df = pd.read_csv(r'output.csv')
 sns.barplot(x="Models", y="Accuracy",data=df[:9])
 sns.barplot(x="Models", y="Precision",data=df[:9])
 sns.barplot(x="Models", y="Recall",data=df[:9])
